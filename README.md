@@ -6,11 +6,15 @@ The Shrew Soft VPN Client for Linux and BSD is an IPsec Client for FreeBSD, NetB
 
 Website: https://www.shrew.net/home
 
-# Install
+# Notes
 
-`snap install --edge ike-qt`
+- 'unable to open /etc/iked.conf'. If you have received this type in error. Just create empty file and named 'iked.conf'.
 
-Before use, start the service
-`sudo snap start ike-qt`
+# Local installation
+
+`snapcraft`
+`sudo snap install --devmode ./ike-qt_2.2.1_amd64.snap`
+`sudo snap run ike-qt.iked` (Start the daemon)
+`/snap/bin/ike-qt.qikea` (Run the GUI)
 
 # Still in beta, some features may not work.
