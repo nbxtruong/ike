@@ -13,8 +13,11 @@ Website: https://www.shrew.net/home
 # Local installation
 
 `snapcraft`
+
 `sudo snap install --devmode ./ike-qt_2.2.1_amd64.snap`
+
 `sudo snap run ike-qt.iked` (Start the daemon)
+
 `/snap/bin/ike-qt.qikea` (Run the GUI)
 
 # Still in beta, some features may not work.
